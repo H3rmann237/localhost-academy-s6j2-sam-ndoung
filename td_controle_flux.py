@@ -54,25 +54,42 @@
 # ====== ===== ===== ===== ===== ====== =====
 # EXERCICE 4
 # ====== ===== ===== ===== ===== ====== =====
-def  est_pair(n) :
-    if n%2 == 0:
-        return print("True")
-    else :
-        return print("False")
 
-def maximum(a, b) :
-    if a > b :
-        return print(a)
-    else :
-        return print(b)
+#def  est_pair(n) :
+#    if n%2 == 0:
+#        return print("True")
+#    else :
+#        return print("False")
+
+#def maximum(a, b) :
+#    if a > b :
+#        return print(a)
+#    else :
+#        return print(b)
     
-def compter_voyelles(mot) :
-    nbr_voyelle = 0
-    for i in mot:
-        if i == "a" or i == "e" or i == "i" or i == "o" or i == "u" :
-            nbr_voyelle += 1
-    return print(nbr_voyelle)
+#def compter_voyelles(mot) :
+#    nbr_voyelle = 0
+#    for i in mot:
+#        if i == "a" or i == "e" or i == "i" or i == "o" or i == "u" :
+#            nbr_voyelle += 1
+#    return print(nbr_voyelle)
 
-est_pair(4)
-maximum(6, 2)
-compter_voyelles("azerty")
+#est_pair(4)
+#maximum(6, 2)
+#compter_voyelles("azerty")
+
+# ====== ===== ===== ===== ===== ====== =====
+# EXERCICE 5
+# ====== ===== ===== ===== ===== ====== =====
+
+def presenter (nom,ville ="Yaounde") :
+    print (f"{ nom } habite a { ville }. ")
+
+def somme_total(*nombres):
+    total = 0
+    for i in nombres:
+        total += i
+    return print(total)
+
+presenter("sam","chine")
+somme_total(5,10,25,10,5)
