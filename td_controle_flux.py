@@ -82,14 +82,27 @@
 # EXERCICE 5
 # ====== ===== ===== ===== ===== ====== =====
 
-def presenter (nom,ville ="Yaounde") :
-    print (f"{ nom } habite a { ville }. ")
+#def presenter (nom,ville ="Yaounde") :
+#    print (f"{ nom } habite a { ville }. ")
 
-def somme_total(*nombres):
-    total = 0
-    for i in nombres:
-        total += i
-    return print(total)
+#def somme_total(*nombres):
+#    total = 0
+#    for i in nombres:
+#        total += i
+#    return print(total)
 
-presenter("sam","chine")
-somme_total(5,10,25,10,5)
+#presenter("sam","chine")
+#somme_total(5,10,25,10,5)
+
+# ====== ===== ===== ===== ===== ====== =====
+# EXERCICE 6
+# ====== ===== ===== ===== ===== ====== =====
+
+solde = 1000
+
+def retirer(solde,montant) :
+    solde =solde-montant
+    return solde
+
+nouveau_solde = retirer (solde,200)
+print ( nouveau_solde )
