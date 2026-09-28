@@ -98,11 +98,29 @@
 # EXERCICE 6
 # ====== ===== ===== ===== ===== ====== =====
 
-solde = 1000
+#solde = 1000
 
-def retirer(solde,montant) :
-    solde =solde-montant
-    return solde
+#l'erreur venait du fait que la foction voulait utiliser la variable solde sans y avoir acces
+#def retirer(solde,montant) :
+#    solde =solde-montant
+#    return solde
 
-nouveau_solde = retirer (solde,200)
-print ( nouveau_solde )
+#nouveau_solde = retirer (solde,200)
+#print ( nouveau_solde )
+
+# ====== ===== ===== ===== ===== ====== =====
+# Bonus
+# ====== ===== ===== ===== ===== ====== =====
+
+def fizzbuzz():
+    for i in range(1,51):
+        if i % 3 == 0 :
+            print("Fizz")
+        elif i % 5 == 0 :
+            print("Buzz")
+        elif i % 2 == 0 :
+            print("FizzBuzz")
+        else :
+            print(i)
+
+fizzbuzz()
